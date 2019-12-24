@@ -1,8 +1,13 @@
+/*
+js入口
+*/
 import Vue from 'vue'
-import App from './App.vue'
-
-Vue.config.productionTip = false
-
+import App from './App'
+import router from './router'
+import '../public/css/reset.css'
+/* eslint-disable no-new */
 new Vue({
-  render: h => h(App)
-}).$mount('#app')
+  el: '#app',
+  render: h => h(App),
+  router
+})
